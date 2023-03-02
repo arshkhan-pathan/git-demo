@@ -10,6 +10,10 @@
 <h1>Version 4 modification</h1>
 <h1>Version 4 modification</h1>
 <h1>Version 4 modification</h1>
+<<<<<<< HEAD
+=======
+
+>>>>>>> fix/ui-changes-v1
 import React, { useState, useEffect } from "react";
 
 import Login from "./components/Login/Login";
@@ -21,7 +25,11 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
+<<<<<<< HEAD
     const storedUserLoggedInnformation = localStorage.getItem("isLoggedIn");
+=======
+    const storedUserLoggedInInformation = localStorage.getItem("isLoggedIn");
+>>>>>>> fix/ui-changes-v1
 
     if (storedUserLoggedInInformation === "1") {
       setIsLoggedIn(true);
@@ -32,7 +40,11 @@ function App() {
     // We should of course check email and password
     // But it's just a dummy/ demo anyways
     localStorage.setItem("isLoggedIn", "1");
+<<<<<<< HEAD
     setislog(true);
+=======
+    setIsLoggedIn(true);
+>>>>>>> fix/ui-changes-v1
   };
 
   const logoutHandler = () => {
@@ -41,7 +53,11 @@ function App() {
   };
 
   return (
+<<<<<<< HEAD
     <AuthContext.Povider
+=======
+    <AuthContext.Provider
+>>>>>>> fix/ui-changes-v1
       value={{
         isLoggedIn: isLoggedIn,
         onLogout: logoutHandler,
